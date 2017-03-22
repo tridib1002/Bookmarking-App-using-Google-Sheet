@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+	<meta charset=utf-8>
+	<title>Book Marker</title>
+	<meta name="viewport" content = "width=device-width, 
+	initial-scale=1.0">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="templates/custom.css">
+	
+</head>
+
+<body>
+
+<div class="container">
+	  <div class="jumbotron">
+	    <h2 style="padding-bottom:10px;">Bookmarker App</h2>
+	    <form id="form">	
+	    <div class="form-group">
+	    	<input id="name" type="text" class="form-control" placeholder="Website Name">
+	    </div>
+	    <div class="form-group">
+	    	<input id="url" type="text" class="form-control" placeholder="Site Url">
+	    </div>
+	    <div class="form-group">
+			<textarea id="description" class="form-control" placeholder="Description" id="exampleTextarea" rows="3"></textarea>
+	    </div>
+	    <button class="btn btn-success" id="btn1">Save</button>
+	    <button id="refreshBookmarks" class="btn btn-success">Refresh</button>
+	    </form>
+		
+	 </div>
+
+	<div class="row marketing">
+		<div>
+		
+			<div id="bookMarks"></div>
+
+		</div>
+	</div>
+<script src="static/main.js"></script>
+</body>
+</html>
