@@ -26,7 +26,7 @@ $('#btn1').click(function(e){
 // Below ajax request is pushing data to a Google form which is created particularly to store these data.
 
 		$.ajax({
-            url: 'https://docs.google.com/forms/d/e/1FAIpQLScBbRigvSU4ZL-RaKUQnw5OiwkQIBAoLm7mitfS_g9V9PhgSw/formResponse',
+            url: <google-sheet-url>',
             data: {
               "entry.1091620218" : siteName,
               "entry.38005729" : siteUrl,
@@ -75,9 +75,9 @@ function fetchBookmarks(){
 	$.ajax({
 
 // This macro is used for pulling excel data as JSON format
-// https://script.google.com/macros/s/AKfycbygukdW3tt8sCPcFDlkMnMuNu9bH5fpt7bKV50p2bM/exec?id=YourSheetID&sheet=SheetName
+// https://script.google.com/macros/s/<sheetID>/exec?id=YourSheetID&sheet=SheetName
 
-          url: 'https://script.google.com/macros/s/AKfycbygukdW3tt8sCPcFDlkMnMuNu9bH5fpt7bKV50p2bM/exec?id=1ziDS_ESipbITjjiCbIhJkrUlJhGPowKs7RNurKFXbbo&sheet=Sheet1',
+          url: '<MacroName>',
           type: 'GET'
         }).done(function(data){
 
@@ -86,7 +86,7 @@ function fetchBookmarks(){
           bookmarks = bookmarks.reverse();
 
           // Excel database which is connected to the above "Google form", Our bookmark data will be saved here.
-          excel_db = 'https://docs.google.com/spreadsheets/d/1ziDS_ESipbITjjiCbIhJkrUlJhGPowKs7RNurKFXbbo/edit#gid=366816021'
+          excel_db = '<google-form-link>'
 
   	if (bookmarks != null){
 
